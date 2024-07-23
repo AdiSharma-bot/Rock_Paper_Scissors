@@ -1,13 +1,48 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Rock Paper Scissors</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script src='rock-papers.js'></script>
-</head>
-<body>
-    Hii
-</body>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        body {
+            max-height: 100vh;
+        }
+        .container {
+            box-sizing: border-box;
+            padding-bottom: 7%;
+            padding-top: 14%;
+            gap: 30px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .game-results {
+            box-sizing: border-box;
+            gap: 7px;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+
+        }
+    </style>
+    <script src="rock-papers.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <button id="rock">Rock</button>
+      <button id="paper">Paper</button>
+      <button id="scissors">Scissors</button>
+    </div>
+    <div class="game-results">
+      <p class = 'round-scores'></p>
+      <p class = 'round-result'></p>
+      <p class = 'final-scores'></p>
+      <p class = 'final-result'></p>
+     
+    </div>
+  </body>
 </html>
